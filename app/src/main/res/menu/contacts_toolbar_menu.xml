@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_contact_toolbar_button"
+        android:icon="@drawable/ic_baseline_person_add_24"
+        app:showAsAction="always"
+        android:title="@string/add_contact" />
+
+    <group>
+        <item
+            android:id="@+id/create_group_chat"
+            android:title="@string/create_group_chat" />
+        <item
+            android:id="@+id/show_group_chats"
+            android:title="@string/show_group_chats" />
+    </group>
+</menu>

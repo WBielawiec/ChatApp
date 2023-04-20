@@ -1,0 +1,20 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        app:icon="@drawable/manage_accounts_icon"
+        app:key="accountSettings"
+        app:title="@string/account_settings" />
+
+    <Preference
+        app:icon="@drawable/blocked_icon"
+        app:key="blockedUsers"
+        app:title="@string/blocked_users_settings" />
+
+    <PreferenceCategory app:title="@string/preferences_settings">
+
+        <SwitchPreference
+            app:icon="@drawable/dark_mode_icon"
+            app:key="darkTheme"
+            app:title="@string/dark_theme_settings" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/latestMessage"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:id="@+id/latestMessage"/>
+    <item android:title="@string/contacts"
+        android:icon="@drawable/ic_baseline_people_alt_24"
+        android:id="@+id/contacts"/>
+    <item android:title="@string/notifications"
+        android:icon="@drawable/notification_icon"
+        android:id="@+id/notifications"/>
+</menu>

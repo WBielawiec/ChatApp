@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //fragment_start_screen
+    <string name="app_name">ChatApp</string>
+    <string name="log_in">Zaloguj się</string>
+    <string name="register">Utwórz konto</string>
+
+    //fragment_login
+    <string name="dont_have_account">Nie masz konta? Utwórz je.</string>
+    <string name="password_reset">Nie pamiętasz hasła?</string>
+    <string name="login_error">Niepoprawna nazwa użytkownika lub hasło.</string>
+
+    //fragment_password_reset
+    <string name="password_reset_hint">Wpisz adres e-mail przypisany do Twojego konta.</string>
+    <string name="password_reset_send">Resetuj hasło</string>
+    <string name="password_reset_complete">Wiadomość została wysłana na podany e-mail.</string>
+    <string name="empty_email_field_communicat">Proszę podać adress email.</string>
+
+
+    //fragment_register
+    <string name="have_account">Posiadasz już konto? Zaloguj się.</string>
+    <string name="password_hint">hasło</string>
+    <string name="password_retype_hint">powtórz hasło</string>
+    <string name="username_hint">nazwa użytkownika</string>
+    <string name="email_hint">adres e-mail</string>
+
+    //registerFragment
+    <string name="email_password_fields_communicat">Proszę wypełnić pole adresu e-mail i hasła.</string>
+    <string name="password_length_communicat">Hasło musi zawierać conajmniej 6 znaków.</string>
+    <string name="username_length_communicat">Nazwa użytkownika musi zawierać conajmniej 3 znaki.</string>
+    <string name="password_match_communicat">Niepoprawne hasło</string>
+    <string name="user_create_failure">Nie udało się utworzyć użytkownika: </string>
+
+    //fragment_account_setup
+    <string name="image_choose_button">Wybierz zdjęcie</string>
+    <string name="image_choose_textbox">Wybierz swój avatar</string>
+    <string name="description_choose_textbox">Wpisz opis: </string>
+    <string name="description_textbox">Opis:</string>
+    <string name="skip">Pomiń</string>
+    <string name="next">Następny</string>
+    <string name="save">Zapisz</string>
+
+    //drawer_menu
+    <string name="online_status">Online</string>
+    <string name="idle_status">Zaraz wracam</string>
+    <string name="do_not_disturb_status">Nie przeszkadzać</string>
+    <string name="offline_status">Offline</string>
+    <string name="settings">Ustawienia</string>
+    <string name="log_out">Wyloguj się</string>
+    <string name="application_status">Aplikacja</string>
+    <string name="profile_status">Status</string>
+
+    //fragment_contacts
+    <string name="contacts_toolbar_title">Kontakty</string>
+    <string name="add_contact">Dodaj kontakt</string>
+    <string name="show_group_chats">Lista czatów grupowych</string>
+    <string name="create_group_chat">Utwórz grupę</string>
+
+    //fragment_latest_message
+    <string name="latest_message_toolbar_title">Czaty</string>
+    <string name="you_latest_message">Ty: </string>
+
+    //popup_menu
+    <string name="open_chat">Otwórz czat</string>
+    <string name="delete_chat">Usuń</string>
+    <string name="show_profile">Pokaż profil</string>
+    <string name="ignore_user">Ignoruj użytkownika</string>
+    <string name="delete_contact">Usuń kontakt</string>
+    <string name="download_attachment">Pobierz</string>
+
+
+    //fragment_notofications
+    <string name="notifications_toolbar_title">Powiadomienia</string>
+    <string name="notifications_add_contact_communicat"> zaprosił Cię do kontaktów</string>
+
+    //user_profile_fragment
+    <string name="start_chat">Rozpocznij czat</string>
+    <string name="contact_added_communicat">Użytkownik dodany do listy kontaktów.</string>
+    <string name="send_with_notification">Dodaj z zaproszeniem</string>
+    <string name="send_without_notification">Dodaj bez zaproszenia</string>
+    <string name="send_invitation">Wyślij zaproszenie</string>
+
+    //fragment_chat
+    <string name="send_button">Wyślij</string>
+    <string name="enter_message">Wpisz wiadomość</string>
+    <string name="clear_chat">Usuń historię widomości</string>
+    <string name="clear_chat_confirmation">Ta operacja nie może zostać cofnięta.</string>
+
+    //fragment_group_chat_creation
+    <string name="group_name">Nazwa grupy:</string>
+    <string name="group_user_add">Dodaj użytkownika:</string>
+    <string name="create_group">Utwórz grupę</string>
+    <string name="group_name_communicat">Nazwa grupy musi zawierać conajmniej 3 znaki.</string>
+    <string name="group_creation_fail">Utworzenie grupy zakończone niepowodzeniem.</string>
+
+    //fragment_group_chat
+    <string name="add_group_user">Dodaj użytkwonika</string>
+    <string name="show_group_users">Pokaż użytkowników</string>
+    <string name="group_chats">Grupy</string>
+    <string name="group_chat_leave">Opuść grupę</string>
+    <string name="group_chat_leave_message">Nie będziesz mógł wysyłać ani odczytywać wiadomości dostępnych na tym chacie.</string>
+    <string name="user_added">Użytkownik dodany.</string>
+
+    //fragment_add_user_to_group_chat
+    <string name="add_user_dialog_title">Dodaj użytkownika</string>
+    <string name="add_user_dialog_message">Na pewno chcesz dodać %s\? </string>
+
+
+    //settings
+    <string name="profile_settings">Profil</string>
+    <string name="account_settings">Konto</string>
+    <string name="blocked_users_settings">Zablokowani użytkownicy</string>
+
+    <string name="preferences_settings">Preferencje</string>
+    <string name="dark_theme_settings">Ciemny motyw</string>
+    <string name="language_settings">Język</string>
+    <string name="notification_settings">Powiadomienia</string>
+
+    <string name="avatar_settings">Avatar</string>
+    <string name="information_settings">Informacje</string>
+    <string name="email_settings">Email</string>
+    <string name="password_settings">Hasło</string>
+
+    <string name="change_avatar">Zmień</string>
+    <string name="remove_avatar">Usuń</string>
+    <string name="username">Nazwa użytkownika:</string>
+    <string name="actual_password">Aktualne hasło:</string>
+    <string name="new_password">Nowe hasło:</string>
+    <string name="retype_password">Powtórz nowe hasło:</string>
+    <string name="your_email">Twój e-mail:</string>
+    <string name="new_email">Nowy e-mail:</string>
+    <string name="retype_email">Powtórz nowy e-mail:</string>
+    <string name="delete_account">Usuń konto</string>
+    <string name="delete">Usuń konto</string>
+    <string name="delete_profile">Aby usuńąć kotno proszę podać hasło.</string>
+    <string name="delete_button">Usuń konto</string>
+    <string name="cancel">Anuluj</string>
+
+    <string name="information_update_success">Informacje profilu zostały zmienione.</string>
+    <string name="password_fields_communicat">Uzupełnij wszystkie pola.</string>
+    <string name="incorrect_password_communicat">Aktualne hasło nieprawidłowe.</string>
+    <string name="password_update_success">Hasło zostało zmienione.</string>
+    <string name="password_update_failure">Nie można zmienić hasła.</string>
+
+    <string name="remove_dialog_title">Czy jestaś pewien?</string>
+    <string name="remove_dialog_message">Tej operacji nie da się odwrócić. Stracisz wszsytkie dane.</string>
+
+    <string name="unblock_user">Odblokuj użytkwonika</string>
+
+    <string name="search">szukaj</string>
+
+    <string name="notification_attachement">Wysłał załącznik.</string>
+
+    //navigation fragment menu
+    <string name="latestMessage">Ostatnie wiadomości</string>
+    <string name="contacts">Kontakty</string>
+    <string name="notifications">Powiadomienia</string>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/login_fragment"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+
+        <Button
+            android:id="@+id/loginButton_login_fragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/log_in"
+            app:layout_constraintEnd_toEndOf="@+id/passwordEditText_login_fragment"
+            app:layout_constraintStart_toStartOf="@+id/passwordEditText_login_fragment"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEditText_login_fragment" />
+
+        <EditText
+            android:id="@+id/emailEditText_login_fragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/text_input_selector"
+            android:ems="10"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline18" />
+
+        <TextView
+            android:id="@+id/registerTextView_login_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/dont_have_account"
+            app:layout_constraintEnd_toEndOf="@+id/passwordResetTextView_login_fragment"
+            app:layout_constraintStart_toStartOf="@+id/passwordResetTextView_login_fragment"
+            app:layout_constraintTop_toBottomOf="@+id/passwordResetTextView_login_fragment" />
+
+        <TextView
+            android:id="@+id/passwordResetTextView_login_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/password_reset"
+            app:layout_constraintEnd_toEndOf="@+id/loginButton_login_fragment"
+            app:layout_constraintStart_toStartOf="@+id/loginButton_login_fragment"
+            app:layout_constraintTop_toBottomOf="@+id/loginButton_login_fragment" />
+
+        <EditText
+            android:id="@+id/passwordEditText_login_fragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/text_input_selector"
+            android:ems="10"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/emailEditText_login_fragment"
+            app:layout_constraintStart_toStartOf="@+id/emailEditText_login_fragment"
+            app:layout_constraintTop_toBottomOf="@+id/emailEditText_login_fragment" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

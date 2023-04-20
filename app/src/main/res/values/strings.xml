@@ -1,0 +1,161 @@
+<resources>
+    //fragment_start_screen
+    <string name="app_name">ChatApp</string>
+    <string name="log_in">Log In</string>
+    <string name="register">Create Account</string>
+
+    //fragment_login
+    <string name="dont_have_account">If you don\'t have account, CLICK HERE.</string>
+    <string name="password_reset">Forgot password?</string>
+    <string name="login_error">Wrong username or password.</string>
+
+    //fragment_password_reset
+    <string name="password_reset_hint">Type e-mail address linked to your account.</string>
+    <string name="password_reset_send">Reset password</string>
+    <string name="password_reset_complete">Email was sent to your address.</string>
+    <string name="empty_email_field_communicat">Please enter email address.</string>
+
+
+    //fragment_register
+    <string name="have_account">Already have an account? Log In.</string>
+    <string name="password_hint">password</string>
+    <string name="password_retype_hint">retype password</string>
+    <string name="username_hint">username</string>
+    <string name="email_hint">e-mail</string>
+
+    //registerFragment
+    <string name="email_password_fields_communicat">Please complete email/password fields.</string>
+    <string name="password_length_communicat">Password must contain at least 6 characters.</string>
+    <string name="username_length_communicat">Username must contain at least 3 characters.</string>
+    <string name="password_match_communicat">Retyped password does not match.</string>
+    <string name="user_create_failure">Failed to create user: </string>
+
+    //fragment_account_setup
+    <string name="image_choose_button">Choose image</string>
+    <string name="image_choose_textbox">Choose your avatar</string>
+    <string name="description_choose_textbox">Write your description here:</string>
+    <string name="description_textbox">Description:</string>
+    <string name="skip">Skip for now</string>
+    <string name="next">Next</string>
+    <string name="save">Save</string>
+
+    //drawer_menu
+    <string name="online_status">Online</string>
+    <string name="idle_status">Idle</string>
+    <string name="do_not_disturb_status">Do Not Disturb</string>
+    <string name="offline_status">Offline</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="application_status">Application</string>
+    <string name="profile_status">Status</string>
+
+    //fragment_contacts
+    <string name="contacts_toolbar_title">Contacts</string>
+    <string name="add_contact">Add contact</string>
+    <string name="show_group_chats">Group chats list</string>
+    <string name="create_group_chat">Create group</string>
+
+    //fragment_latest_message
+    <string name="latest_message_toolbar_title">Chats</string>
+    <string name="you_latest_message">You: </string>
+
+    //popup_menu
+    <string name="open_chat">Open chat</string>
+    <string name="delete_chat">Delete</string>
+    <string name="show_profile">Show profile</string>
+    <string name="ignore_user">Ignore user</string>
+    <string name="delete_contact">Delete contact</string>
+    <string name="download_attachment">Download</string>
+
+
+    //fragment_notofications
+    <string name="notifications_toolbar_title">Notifications</string>
+    <string name="notifications_add_contact_communicat"> invited you to contact</string>
+
+    //user_profile_fragment
+    <string name="start_chat">Start Chat</string>
+    <string name="contact_added_communicat">User added to contact list.</string>
+    <string name="send_with_notification">Send with notification</string>
+    <string name="send_without_notification">Send without notification</string>
+    <string name="send_invitation">Send invitation</string>
+
+    //fragment_chat
+    <string name="send_button">Send</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="clear_chat">Remove chat history</string>
+    <string name="clear_chat_confirmation">This operation cannot be undone.</string>
+
+    //fragment_group_chat_creation
+    <string name="group_name">Group name:</string>
+    <string name="group_user_add">Add user:</string>
+    <string name="create_group">Create group</string>
+    <string name="group_name_communicat">Group name must contain at least 3 character.</string>
+    <string name="group_creation_fail">Group creation failed.</string>
+
+
+    //fragment_group_chat
+    <string name="add_group_user">Add user</string>
+    <string name="show_group_users">Show users</string>
+    <string name="group_chats">Group chats</string>
+    <string name="group_chat_leave">Leave group chat</string>
+    <string name="group_chat_leave_message">You won\'t be able to send or read messages available on this chat room.</string>
+    <string name="user_added">User added.</string>
+
+
+    //fragment_add_user_to_group_chat
+    <string name="add_user_dialog_title">Add user</string>
+    <string name="add_user_dialog_message">Are you sure to add %s\? </string>
+
+
+    //settings
+    <string name="profile_settings">Profile</string>
+    <string name="account_settings">Account</string>
+    <string name="blocked_users_settings">Blocked users</string>
+
+    <string name="preferences_settings">Preferences</string>
+    <string name="dark_theme_settings">Dark theme</string>
+    <string name="language_settings">Language</string>
+    <string name="notification_settings">Notifications</string>
+
+    <string name="avatar_settings">Avatar</string>
+    <string name="information_settings">Information</string>
+    <string name="email_settings">Email</string>
+    <string name="password_settings">Password</string>
+
+    <string name="change_avatar">Change</string>
+    <string name="remove_avatar">Remove</string>
+    <string name="username">Username:</string>
+    <string name="actual_password">Current password:</string>
+    <string name="new_password">New password:</string>
+    <string name="retype_password">Retype new password:</string>
+    <string name="your_email">Your e-mail:</string>
+    <string name="new_email">New e-mail:</string>
+    <string name="retype_email">Retype new e-mail:</string>
+    <string name="delete_account">Delete account</string>
+    <string name="delete">Delete account</string>
+    <string name="delete_profile">To delete profile please type your password:</string>
+    <string name="delete_button">Delete Account</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="information_update_success">Profile information changed success.</string>
+    <string name="password_fields_communicat">Please complete all password fields.</string>
+    <string name="incorrect_password_communicat">Current password incorrect.</string>
+    <string name="password_update_success">Password changed success.</string>
+    <string name="password_update_failure">Password changed failure.</string>
+
+    <string name="remove_dialog_title">Are you sure?</string>
+    <string name="remove_dialog_message">This operation cannot be undone. You will lose all your data.</string>
+
+    <string name="unblock_user">Unblock user</string>
+
+    <string name="search">search</string>
+
+    //navigation fragment menu
+    <string name="latestMessage">Latest Message</string>
+    <string name="contacts">Contacts</string>
+    <string name="notifications">Notifications</string>
+
+    <string name="notification_attachement">Send an attachement.</string>
+
+
+</resources>

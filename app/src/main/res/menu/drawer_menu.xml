@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/profile_status">
+        <menu>
+            <group android:checkableBehavior="single" >
+                <item
+                    android:id="@+id/onlineStatusDrawer"
+                    android:icon="@drawable/online_icon"
+                    android:checkable="true"
+                    android:title="@string/online_status" />
+                <item
+                    android:id="@+id/idleStatusDrawer"
+                    android:icon="@drawable/idle_icon"
+                    android:checkable="true"
+                    android:title="@string/idle_status" />
+                <item
+                    android:id="@+id/doNotDisturbDrawer"
+                    android:icon="@drawable/do_not_disturb_icon"
+                    android:checkable="true"
+                    android:title="@string/do_not_disturb_status" />
+                <item
+                    android:id="@+id/offlineDrawer"
+                    android:icon="@drawable/offline_icon"
+                    android:checkable="true"
+                    android:title="@string/offline_status" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/application_status" >
+        <menu>
+            <item
+                android:id="@+id/settingsDrawer"
+                android:title="@string/settings"
+                android:icon="@drawable/settings_icon"/>
+            <item
+                android:id="@+id/logOutDrawer"
+                android:title="@string/log_out"
+                android:icon="@drawable/logout_icon"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="?colorPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userAvatarImageView_drawer_header"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="?colorPrimaryVariant"
+        android:src="@drawable/avatar_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/statusImageView_drawer_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="58dp"
+        app:civ_circle_background_color="?colorPrimary"
+        android:minWidth="22dp"
+        android:minHeight="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userAvatarImageView_drawer_header"
+        app:layout_constraintEnd_toEndOf="@+id/userAvatarImageView_drawer_header"
+        app:layout_constraintStart_toStartOf="@+id/userAvatarImageView_drawer_header"
+        app:layout_constraintTop_toTopOf="@+id/userAvatarImageView_drawer_header"
+        app:srcCompat="@drawable/do_not_disturb_icon" />
+
+    <TextView
+        android:id="@+id/usernameTextView_drawer_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Username"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/userAvatarImageView_drawer_header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/descriptionTextView_drawer_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:maxHeight="80dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/usernameTextView_drawer_header"
+        app:layout_constraintStart_toStartOf="@+id/usernameTextView_drawer_header"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTextView_drawer_header" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

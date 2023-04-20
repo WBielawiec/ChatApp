@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_navigation_graph"
+    app:startDestination="@id/navigationFragment">
+
+    <fragment
+        android:id="@+id/latestMessagesFragment"
+        android:name="com.example.chatapp.mainFunctions.LatestMessagesFragment"
+        android:label="fragment_latest_messages"
+        tools:layout="@layout/fragment_latest_messages" />
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.example.chatapp.mainFunctions.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" />
+    <fragment
+        android:id="@+id/navigationFragment"
+        android:name="com.example.chatapp.mainFunctions.NavigationFragment"
+        android:label="NavigationFragment" >
+        <action
+            android:id="@+id/action_navigationFragment_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+        <action
+            android:id="@+id/action_navigationFragment_to_chatFragment"
+            app:destination="@id/chatFragment"
+            app:popUpTo="@id/navigationFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigationFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <argument
+            android:name="startFragment"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="latestMessageFragment" />
+        <action
+            android:id="@+id/action_navigationFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_navigationFragment_to_groupChatListFragment"
+            app:destination="@id/groupChatListFragment" />
+        <action
+            android:id="@+id/action_navigationFragment_to_groupChatFragment"
+            app:destination="@id/groupChatFragment" />
+        <action
+            android:id="@+id/action_navigationFragment_to_groupChatCreationFragment"
+            app:destination="@id/groupChatCreationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.example.chatapp.mainFunctions.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/addContactFragment"
+        android:name="com.example.chatapp.mainFunctions.AddContactFragment"
+        android:label="fragment_add_contact"
+        tools:layout="@layout/fragment_add_contact" >
+        <action
+            android:id="@+id/action_addContactFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.chatapp.profile.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <argument
+            android:name="user"
+            app:argType="com.example.chatapp.model.User" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.chatapp.chat.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <argument
+            android:name="currentUser"
+            app:argType="com.example.chatapp.model.User" />
+        <argument
+            android:name="toUser"
+            app:argType="com.example.chatapp.model.User" />
+        <action
+            android:id="@+id/action_chatFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blockedUsersFragment"
+        android:name="com.example.chatapp.mainFunctions.BlockedUsersFragment"
+        android:label="fragment_blocked_users"
+        tools:layout="@layout/fragment_blocked_users" >
+        <action
+            android:id="@+id/action_blockedUsersFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.chatapp.settings.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_accountSettingsFragment"
+            app:destination="@id/accountSettingsFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_blockedUsersFragment"
+            app:destination="@id/blockedUsersFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_navigationFragment"
+            app:destination="@id/navigationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountSettingsFragment"
+        android:name="com.example.chatapp.settings.AccountSettingsFragment"
+        android:label="AccountSettingsFragment" >
+        <action
+            android:id="@+id/action_accountSettingsFragment_to_avatarChangeFragment"
+            app:destination="@id/avatarChangeFragment" />
+        <action
+            android:id="@+id/action_accountSettingsFragment_to_informationChangeFragment"
+            app:destination="@id/informationChangeFragment" />
+        <action
+            android:id="@+id/action_accountSettingsFragment_to_passwordChangeFragment"
+            app:destination="@id/passwordChangeFragment" />
+        <action
+            android:id="@+id/action_accountSettingsFragment_to_deleteUserFragment"
+            app:destination="@id/deleteUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/avatarChangeFragment"
+        android:name="com.example.chatapp.settings.AvatarChangeFragment"
+        android:label="fragment_avatar_change"
+        tools:layout="@layout/fragment_avatar_change" />
+    <fragment
+        android:id="@+id/informationChangeFragment"
+        android:name="com.example.chatapp.settings.InformationChangeFragment"
+        android:label="fragment_information_change"
+        tools:layout="@layout/fragment_information_change" />
+    <fragment
+        android:id="@+id/passwordChangeFragment"
+        android:name="com.example.chatapp.settings.PasswordChangeFragment"
+        android:label="fragment_password_change"
+        tools:layout="@layout/fragment_password_change" />
+    <fragment
+        android:id="@+id/deleteUserFragment"
+        android:name="com.example.chatapp.settings.DeleteUserFragment"
+        android:label="fragment_delete_user"
+        tools:layout="@layout/fragment_delete_user" />
+    <fragment
+        android:id="@+id/groupChatListFragment"
+        android:name="com.example.chatapp.mainFunctions.GroupChatListFragment"
+        android:label="fragment_group_chat_list"
+        tools:layout="@layout/fragment_group_chat_list" >
+        <action
+            android:id="@+id/action_groupChatListFragment_to_groupChatFragment"
+            app:destination="@id/groupChatFragment" />
+        <action
+            android:id="@+id/action_groupChatListFragment_to_groupChatCreationFragment"
+            app:destination="@id/groupChatCreationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupChatFragment"
+        android:name="com.example.chatapp.chat.GroupChatFragment"
+        android:label="fragment_group_chat"
+        tools:layout="@layout/fragment_group_chat" >
+        <action
+            android:id="@+id/action_groupChatFragment_to_addUserToGroupChatFragment"
+            app:destination="@id/addUserToGroupChatFragment" />
+        <argument
+            android:name="groupChatId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_groupChatFragment_to_navigationFragment"
+            app:destination="@id/navigationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupChatCreationFragment"
+        android:name="com.example.chatapp.mainFunctions.GroupChatCreationFragment"
+        android:label="fragment_group_chat_creation"
+        tools:layout="@layout/fragment_group_chat_creation" >
+        <action
+            android:id="@+id/action_groupChatCreationFragment_to_groupChatFragment"
+            app:destination="@id/groupChatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addUserToGroupChatFragment"
+        android:name="com.example.chatapp.mainFunctions.AddUserToGroupChatFragment"
+        android:label="fragment_add_user_to_group_chat"
+        tools:layout="@layout/fragment_add_user_to_group_chat" >
+        <argument
+            android:name="groupChatId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_addUserToGroupChatFragment_to_groupChatFragment"
+            app:destination="@id/groupChatFragment" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register.RegisterFragment">
+
+    <EditText
+        android:id="@+id/passwordRetypeEditText_register_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/password_retype_hint"
+        android:background="@drawable/text_input_selector"
+        android:paddingStart="10dp"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordEditText_register_fragment"
+        app:layout_constraintStart_toStartOf="@+id/passwordEditText_register_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText_register_fragment" />
+
+    <TextView
+        android:id="@+id/logInTextView_register_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/have_account"
+        app:layout_constraintEnd_toEndOf="@+id/registerButton_registerFragment"
+        app:layout_constraintStart_toStartOf="@+id/registerButton_registerFragment"
+        app:layout_constraintTop_toBottomOf="@+id/registerButton_registerFragment" />
+
+    <Button
+        android:id="@+id/registerButton_registerFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/password_retype_hint"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="@+id/passwordRetypeEditText_register_fragment"
+        app:layout_constraintStart_toStartOf="@+id/passwordRetypeEditText_register_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/passwordRetypeEditText_register_fragment" />
+
+    <EditText
+        android:id="@+id/passwordEditText_register_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:background="@drawable/text_input_selector"
+        android:paddingStart="10dp"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/emailEditText_register_fragment"
+        app:layout_constraintStart_toStartOf="@+id/emailEditText_register_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText_register_fragment" />
+
+    <EditText
+        android:id="@+id/emailEditText_register_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/email_hint"
+        android:background="@drawable/text_input_selector"
+        android:paddingStart="10dp"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/usernameEditText_register_fragment"
+        app:layout_constraintStart_toStartOf="@+id/usernameEditText_register_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/usernameEditText_register_fragment" />
+
+    <EditText
+        android:id="@+id/usernameEditText_register_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:background="@drawable/text_input_selector"
+        android:paddingStart="10dp"
+        android:hint="@string/username_hint"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

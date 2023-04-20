@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/addGroupUser"
+        android:title="@string/add_group_user"
+        android:icon="@drawable/ic_baseline_person_add_24"/>
+
+    <item android:id="@+id/leaveGroup"
+        android:title="@string/group_chat_leave"/>
+
+<!--    <item android:id="@+id/showGroupUsers"
+        android:title="@string/show_group_users">-->
+
+</menu>
